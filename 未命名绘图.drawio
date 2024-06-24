@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T15:41:59.820Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="-_b-FI07drzgeMmltsvg" version="24.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T15:47:25.757Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="40mbVpQ_sQH5EuyT7uon" version="24.6.2" type="github">
   <diagram name="第 1 页" id="fjsQgnUb7Lhu3lKXE23s">
     <mxGraphModel dx="1077" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="6SFgys6yS04XjFyFlmpq-1" value="前端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="40" y="190" width="100" height="500" as="geometry" />
+          <mxGeometry x="40" y="190" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="6SFgys6yS04XjFyFlmpq-2" value="后端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="220" y="190" width="100" height="500" as="geometry" />
+          <mxGeometry x="220" y="190" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="6SFgys6yS04XjFyFlmpq-3" value="MQ" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="400" y="190" width="100" height="500" as="geometry" />
+          <mxGeometry x="400" y="190" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="6SFgys6yS04XjFyFlmpq-4" value="IOT" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="580" y="190" width="100" height="500" as="geometry" />
+          <mxGeometry x="580" y="190" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="6SFgys6yS04XjFyFlmpq-5" value="发送闸控指令" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-2">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -72,7 +72,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6SFgys6yS04XjFyFlmpq-21" value="检查超时" style="html=1;verticalAlign=bottom;endArrow=block;curved=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="6SFgys6yS04XjFyFlmpq-21" value="检查超时未超时" style="html=1;verticalAlign=bottom;endArrow=block;curved=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
           <mxGeometry x="-0.0636" width="80" relative="1" as="geometry">
             <mxPoint x="270" y="584.97" as="sourcePoint" />
             <mxPoint x="270" y="540" as="targetPoint" />
@@ -84,10 +84,47 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6SFgys6yS04XjFyFlmpq-22" value="websocket消息推送" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-1">
+        <mxCell id="6SFgys6yS04XjFyFlmpq-22" value="websocket消息推送数据" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="270" y="600" as="sourcePoint" />
             <mxPoint x="190" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-23" value="超过超时时间间隔数据上报" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="690" as="sourcePoint" />
+            <mxPoint x="450" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-24" value="获取上报数据消息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0028" relative="1" as="geometry">
+            <mxPoint x="450" y="720" as="sourcePoint" />
+            <mxPoint x="270" y="720" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-25" value="检查超时已超时" style="html=1;verticalAlign=bottom;endArrow=block;curved=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry x="-0.0636" width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="654.97" as="sourcePoint" />
+            <mxPoint x="270" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="655" />
+              <mxPoint x="300" y="610" />
+              <mxPoint x="270" y="610" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-26" value="websocket消息推送超时" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="670" as="sourcePoint" />
+            <mxPoint x="90" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-27" value="websocket消息推送上报数据" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="740" as="sourcePoint" />
+            <mxPoint x="90" y="740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
