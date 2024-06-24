@@ -1,9 +1,95 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T15:25:06.697Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.6.2" etag="UaDHAug4f2dlq15kHk64" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T15:41:38.592Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="3f9HBgoVERN2y-ueX3Ot" version="24.6.2" type="github">
   <diagram name="第 1 页" id="fjsQgnUb7Lhu3lKXE23s">
-    <mxGraphModel>
+    <mxGraphModel dx="1077" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6SFgys6yS04XjFyFlmpq-1" value="前端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-2" value="后端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="220" y="190" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-3" value="MQ" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="400" y="190" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-4" value="IOT" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="580" y="190" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-5" value="发送闸控指令" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="90" y="270" as="sourcePoint" />
+            <mxPoint x="210" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-6" value="发送闸控指令" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="300" as="sourcePoint" />
+            <mxPoint x="350" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-7" value="下发闸控指令" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="450" y="390" as="sourcePoint" />
+            <mxPoint x="629.5000000000002" y="390.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-8" value="下发超时回复检查延迟队列" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-9" value="下发超时上报检查延迟队列" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-10" value="回复" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="420" as="sourcePoint" />
+            <mxPoint x="550" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-11" value="数据上报" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="450" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-13" value="获取回复消息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-2">
+          <mxGeometry x="0.0028" relative="1" as="geometry">
+            <mxPoint x="450" y="480" as="sourcePoint" />
+            <mxPoint x="370" y="480" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-15" value="获取上报数据消息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0028" relative="1" as="geometry">
+            <mxPoint x="450" y="510" as="sourcePoint" />
+            <mxPoint x="270" y="510" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-21" value="检查超时" style="html=1;verticalAlign=bottom;endArrow=block;curved=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry x="-0.0636" width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="584.97" as="sourcePoint" />
+            <mxPoint x="270" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="585" />
+              <mxPoint x="300" y="540" />
+              <mxPoint x="270" y="540" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SFgys6yS04XjFyFlmpq-22" value="websocket消息推送" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="6SFgys6yS04XjFyFlmpq-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="600" as="sourcePoint" />
+            <mxPoint x="190" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
